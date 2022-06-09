@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Lato:ital,wght@0,300;1,400;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-attachment: fixed;
+    background-image: linear-gradient(to top, rgb(28, 40, 122) 0%, #a3dad9 100%);
+    font-family: 'Kdam Thmor Pro';
+    color: white;
+    padding: 100px 0;
+}
+
+button {
+    margin: 20px 0 80px 0;
+    padding: 15px 45px;
+    font-size: 5rem;
+    background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA 51%, #77A1D3 100%);
+    transition: .5s;
+    border: none;
+    background-size: 200% auto;
+    color: #fff;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-position: right center;
+    color: #a1fffd;
+    text-decoration: none;
+}
+
+i {
+    margin: 20px 0;
+    color: #a1fffd;
+    font-size: 2rem;
+    text-shadow: black 2px 0 10px;
+}
+
+i:hover {
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+h1 {
+    color: rgb(44, 59, 157);
+    font-size: 5rem;
+}
+
+p {
+    margin-left: 10px;
+    display: inline;
+    font-family: 'Kdam Thmor Pro';
+    font-weight: 100;
+}
+
+.score {
+    font-size: 3rem;
+    color: white;
+}
+
+.modal-text {
+    color: white;
+    font-size: 4rem;
+    text-shadow: black 1px 0 15px;
+}
+
+.modal-div {
+    margin: auto;
+}
+
+.flex-vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-horizontal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.modal {
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    top: -100%;
+    opacity: 0;
+    transition: top 0.4s, opacity 0.4s;
+}
+
+.modal.show {
+    top: 0;
+    opacity: 1;
+}
+
+.message {
+    margin: 20px 0;
+    font-size: 2rem;
+    color: #fff;
+}
+
+
+/* Modal Content */
+
+.modal-content {
+    background-color: rgba(19, 23, 46, 0.891);
+    margin: auto;
+    padding: 20px;
+    width: 90%;
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/* The Close Button */
+
+.close {
+    color: white;
+    float: right;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #a1fffd;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
